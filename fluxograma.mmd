@@ -1,0 +1,38 @@
+graph TD
+    %% Estrutura Vertical Simples
+
+    A["COLETA DE HASHTAGS EM ARTIGOS ACADÊMICOS"]
+
+    %% Bases de Dados no mesmo nível, conectadas verticalmente
+    A --> BD1["Google Scholar"]
+    A --> BD2["Semantic Scholar"]
+    A --> BD3["EBSCO"]
+
+    %% Palavras-Chave e Quantidade de Documentos na Seleção
+    BD1 --> K1["Historical Hashtag<br>9 documentos, 8 pertinentes"]
+    BD1 --> K2["Event Based Hashtag<br>8 documentos, 3 pertinentes, 5 a avaliar"]
+    
+    BD2 --> K3["Temporal Inscriptions AND Historical Hashtags (HIST)<br>10 documentos, 2 pertinentes, 3 a avaliar, 5 não pertinentes"]
+    BD2 --> K4["Temporal Inscriptions AND Historical Hashtags (TODAS)<br>6 documentos, 2 pertinentes, 4 a avaliar"]
+    BD2 --> K5["Historical Hashtag AND Folksonomy<br>3 documentos, 3 pertinentes"]
+
+    BD3 --> K6["Temporal Inscriptions AND Hashtags<br>26 documentos, 16 pertinentes, 10 a avaliar"]
+
+    %% Extração com Links para Documentos
+    K1 --> L1["Link para Historical Hashtag"]
+    click L1 href "https://docs.google.com/document/d/1gnLuuhPxK3jCwty_lMbKMTq_eRr_EHWFft46NrN2PlY/edit?usp=sharing" "Acessar Documento"
+   
+    K2 --> L5["Link para Event Based Hashtag"]
+    click L5 href "https://docs.google.com/document/d/1G3ArqPGwON249Ii9sl07NJdQfhMSX1RaZ9oyBV6cgE8/edit?usp=sharing" "Acessar Documento"
+
+    K3 --> L2["Link para Temporal Inscriptions AND Historical Hashtags (HIST)"]
+    click L2 href "https://docs.google.com/document/d/1Wey7aP1nVXmTrhIh5ero-3pFP_DKB_dBNeivsJj7GB8/edit?usp=sharing" "Acessar Documento"
+
+    K4 --> L3["Link para Temporal Inscriptions AND Historical Hashtags (TODAS)"]
+    click L3 href "https://docs.google.com/document/d/15ANIRs2IILBmPeFKAshUEVkdxbtLwbgP1o0cPer5d3Q/edit?usp=sharing" "Acessar Documento"
+
+    K5 --> L4["Link para Historical Hashtags AND Folksonomy"]
+    click L4 href "https://docs.google.com/document/d/1KwmtNnetnd9vWS8-j4-yUmgunOcYKhRVNX3xkztFXt0/edit?usp=sharing" "Acessar Documento"
+    
+    K6 --> L6["Link para Temporal Inscriptions AND Hashtags"]
+    click L6 href "https://docs.google.com/document/d/1ng3IP4etbf7aANTmG_zNmFqW1hT3sl2H30IijaA363Q/edit?usp=sharing" "Acessar Documento"
